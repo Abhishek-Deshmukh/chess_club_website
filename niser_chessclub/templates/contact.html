@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!--================Home Banner Area =================-->
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <div class="banner_content text-center">
+                <h2>Contact Us</h2>
+                <div class="page_link">
+			<a href="{% url 'home' %}">Home</a>
+			<a href="{% url 'contact' %}">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Contact Area =================-->
+    <section class="contact_area section_gap">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="contact_info">
+              <div class="info_item">
+                <i class="ti-home"></i>
+                <h6>National Institute of Science Educationa and Research</h6>
+                <p>Jatni,Bhubaneshwar</p>
+              </div>
+              <div class="info_item">
+                <i class="ti-headphone"></i>
+                <h6><a href="#">6370666477</a></h6>
+                <p>Mon to Fri 9am to 6 pm</p>
+              </div>
+              <div class="info_item">
+                <i class="ti-email"></i>
+                <h6>chess.club@niser.ac.in</h6>
+                <p>Send us your query anytime!</p>
+              </div>
+            </div>
+          </div>
+       </div>
+      </div>
+    </section>
+    <!--================Contact Area =================-->
+{% endblock content %}
