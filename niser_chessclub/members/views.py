@@ -10,6 +10,7 @@ def about(request):
 
 def members(request):
     context = {
+            'members':Member.objects.all(),
     }
     return render(request,'members.html',context)
 

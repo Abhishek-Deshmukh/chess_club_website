@@ -11,8 +11,8 @@
               <div class="banner_content text-center">
                 <h2>Meet The Team</h2>
                 <div class="page_link">
-                  <a href="index.html">Home</a>
-                  <a href="about-us.html">About Us</a>
+			<a href="{% url 'home' %}">Home</a>
+			<a href="{% url 'about' %}">About Us</a>
                 </div>
               </div>
             </div>
@@ -29,217 +29,25 @@
             <div class="main_title">
               <h2 class="mb-3">Meet The Team</h2>
               <p>
-	      	The Family
+		Behind every successful club, the crucial point that stands out is the workforce or the members. It’s both a qualitative and quantitative aspect, which is a must. The NISER Chess Fraternity currently has about 15 active participants and about 20 non-active guys ! So, that’s quite good for a university level club. So take a look !
               </p>
             </div>
           </div>
         </div>
-
         <div class="row justify-content-center d-flex align-items-center">
+	{% for member in members %}
           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t1.jpg" alt="" />
+		    <img class="img-fluid" src="{{member.image}}" alt="" />
             </div>
             <div class="meta-text text-sm-center">
-              <h4>Abubakr Mohammad Jamal</h4>
-              <p class="designation">Captain</p>
+		    <h4>{{member.name}} , {{member.school}}</h4>
+		    <p class="designation">{{member.designation}}</p>
               <div class="mb-4">
-                <p>
-                  Introducing our captain, AMJ ! Well, this man has been spearheading the chess club for over 4 years and he has essentially laid the whole system on which the CCN performs currently ! A great captain, a superb on-spot rapper, he is now a veteran in the CCN, yet his guidance remains invaluable for the juniors                </p>
+		      <p>{{member.description}}</p>
               </div>
               </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t2.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Bastab Bhoi</h4>
-              <p class="designation">Vice-Captain</p>
-              <div class="mb-4">
-                <p>
-                 A great admirer of both Bobby Fischer and Antoly Karpov, Bastab is our in-house GM ! Quite experimental, yet quite positional, he can make some real upsets on his day. And as they say, form is temporary but class is permanent, well Bastab is one of the best instances available.
-		</p>
-              </div>
-          </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>B.E Aldrin</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-                 An all-weather, ever reliable, classical format loving beast. And you don’t wanna mess with him, when he’s on song. Well, bullet games form his bread and butter in the virtual world, but his concentration is simply unmatched in the classical format ! The best thing about him is ability to capitalize on the smallest of advantages and pull off a victory. Loads to achieve, champ !
-		</p>
-              </div>
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Suman Bhaumik</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-                  If making upsets is an art, probably Suman is the piccasso of it @CCN. He is blessed with some unconventional playing style and his unorthodox moves will simply puzzle you, if you’re playing for the first time.He’s currently in his 5th year and will proabably be leaving the institute, next semester. We wish him, all the best for his future endeavours !
-		</p>
-              </div>
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Dipti Ranjan</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-Our Anti-Chess Expert, his play may fluctuate in the blitz format but he’s certainly a force in the longer formats of the game !He’s been a bit off the scene now, but considering the fact that he’s currently pursuing PhD, we appreciate his interest towards the game !
-		</p>
-              </div>
-              </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Amareshwar Nanda</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-A fresh entrant into the chess scene, he rose to everyone’s attention by remaining unbeaten in the Inter-Batch Tournament and by securing the runners-up in the Debasish Jena Memorial Tournament, which confirmed his selection into the IISM Squad. His golden form continued there also, he dominated each of his opponents and won all 5 games on board 4. We hope, he would continue his form in the coming years !
-		</p>
-              </div>
-              </div>
-          </div>
-
-	 <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Dripto Biswas</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-Well, he is always the surprise package in any Intra-NISER Tournament. He utilizes the swiss gambit system perfectly and suddenly, you’ll see him playing in the top boards. Despite the fact that he’s really focussed on academics, his game-play creates the impression of a well-off club level player.
-		</p>
-              </div>
-              </div>
-          </div>
-
-	 <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Ankit Mohapatra</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-	Ankit has been a nice stratergist for the CCN, in the IISM 2k17. He played that role to perfection and if needed he can try and pull some matches. Thus, having a player is like a boon in any  tournament !
-		</p>
-              </div>
-              </div>
-          </div>
-
-	 <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Anshuman Padhi</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-Another fresh entrant into the chess scene, he played some decent chess in the Inter Batch Tournament. Maybe a dip in form, ruined his dreams of making it into the IISM squad, but we have the confidence that he will surely try again to secure his rightful place. He’s an excellent stratergist and plays the role of motivating players to perfection !
-		</p>
-              </div>
-              </div>
-          </div>
-	 <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Lipsa Gomango</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-		She’s the only female chess player, who has been active in the chess arena now. She’s a SGFI player and brings quite tough competition to the board. Her ability to restore equality, from a disadvantageous position, is surely one thing to watch out for !
-		</p>
-              </div>
-              </div>
-          </div> <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Pravanjan Swain</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-Another fresh entrant into the chess scene, he played some decent chess in the Inter Batch Tournament. Maybe a dip in form, ruined his dreams of making it into the IISM squad, but we have the confidence that he will surely try again to secure his rightful place. He’s an excellent stratergist and plays the role of motivating players to perfection !
-		</p>
-              </div>
-              </div>
-          </div> <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Harsha Indukuri</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-A player who is improving day by day, his confidence always remains sky-high, no matter who the opponent is. He’s running through ranks now and gradually shaping his game to a be a beast ! If all goes well, he’ll be a force to reckon with, soon !
-		</p>
-              </div>
-              </div>
-          </div>
-
-	  <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t3.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Gaurav Swansi</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
-Another fresh entrant into the chess scene, he played some decent chess in the Inter Batch Tournament. Maybe a dip in form, ruined his dreams of making it into the IISM squad, but we have the confidence that he will surely try again to secure his rightful place. He’s an excellent stratergist and plays the role of motivating players to perfection !
-		</p>
-              </div>
-              </div>
-          </div>
-	  <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
-            <div class="thumb d-flex justify-content-sm-center">
-              <img class="img-fluid" src="img/trainer/t4.jpg" alt="" />
-            </div>
-            <div class="meta-text text-sm-center">
-              <h4>Chinmay Routray</h4>
-              <p class="designation">Player</p>
-              <div class="mb-4">
-                <p>
- calm and relaxed persona on the board but a thug life attitude outside of it, this man has the ability to hold his nerves even when, the odds are completely against him, and snap a win !
-                </p>
-              </div>
-                          </div>
-          </div>
-        </div>
-      </div>
-    </section>
+	{% endfor %}
     <!--================ End Meet The Team Area =================-->
 {% endblock content %}
