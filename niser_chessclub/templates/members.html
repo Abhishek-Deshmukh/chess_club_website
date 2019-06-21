@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base2.html' %}
 {% load static %}
 {% block content %}
 <!--================Home Banner Area =================-->
@@ -34,11 +34,18 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
         <div class="row justify-content-center d-flex align-items-center">
 	{% for member in members %}
           <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
             <div class="thumb d-flex justify-content-sm-center">
-		    <img class="img-fluid" src="{{member.image}}" alt="" />
+		    <img class="img-fluid" src="{% if member.image %}
+		    {{member.image.url}}
+		    {% else %}
+		    {% static './img/default_member.png' %}
+		    {% endif %}
+		    ">
             </div>
             <div class="meta-text text-sm-center">
 		    <h4>{{member.name}} , {{member.school}}</h4>
@@ -49,5 +56,6 @@
               </div>
           </div>
 	{% endfor %}
+	</div>
     <!--================ End Meet The Team Area =================-->
 {% endblock content %}

@@ -344,9 +344,9 @@ button:focus {
     @media (max-width: 991px) {
       .home_banner_area .banner_inner {
         top: 50%; } }
-    .home_banner_area .banner_inner .banner_content h2 {
       font-size: 48px;
-      font-weight: 500; }
+      font-weight: 500;
+      color: #ffffa2; }
     .home_banner_area .banner_inner .banner_content p {
       font-size: 20px;
       color: #002347;
@@ -391,6 +391,153 @@ button:focus {
       .blog_banner .banner_inner .blog_b_text #ffffff_bg_btn {
         line-height: 42px;
         padding: 0px 45px; }
+
+.contact_banner_area {
+	position: relative;
+	background: url(../img/banner/contact_banner.jpeg) no-repeat center center;
+  z-index: 1;
+  min-height: 392px;
+  padding-top: 0 !important; }
+  .contact_banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 392px;
+    z-index: 1; }
+    .contact_banner_area .banner_inner .overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 35, 71, 0.8); }
+    .contact_banner_area .banner_inner .banner_content {
+      position: relative;
+      z-index: 2;
+      color: #fff; }
+      .contact_banner_area .banner_inner .banner_content h2 {
+        color: #fff;
+        font-size: 45px;
+        margin-bottom: 0px; }
+      .contact_banner_area .banner_inner .banner_content .page_link {
+        display: inline-block;
+        padding: 7px 20px; }
+        .contact_banner_area .banner_inner .banner_content .page_link a {
+          font-size: 15px;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          margin-right: 20px;
+          position: relative;
+          text-transform: capitalize; }
+          .contact_banner_area .banner_inner .banner_content .page_link a:before {
+            content: "/";
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%); }
+          .contact_banner_area .banner_inner .banner_content .page_link a:last-child {
+            margin-right: 0px; }
+            .contact_banner_area .banner_inner .banner_content .page_link a:last-child:before {
+              display: none; }
+
+
+.about_banner_area {
+  position: relative;
+  background: url(../img/banner/about_us_banner.jpeg) no-repeat center center;
+  z-index: 1;
+  min-height: 392px;
+  padding-top: 0 !important; }
+  .about_banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 392px;
+    z-index: 1; }
+    .about_banner_area .banner_inner .overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 35, 71, 0.8); }
+    .about_banner_area .banner_inner .banner_content {
+      position: relative;
+      z-index: 2;
+      color: #fff; }
+      .about_banner_area .banner_inner .banner_content h2 {
+        color: #fff;
+        font-size: 45px;
+        margin-bottom: 0px; }
+      .about_banner_area .banner_inner .banner_content .page_link {
+        display: inline-block;
+        padding: 7px 20px; }
+        .about_banner_area .banner_inner .banner_content .page_link a {
+          font-size: 15px;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          margin-right: 20px;
+          position: relative;
+          text-transform: capitalize; }
+          .about_banner_area .banner_inner .banner_content .page_link a:before {
+            content: "/";
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%); }
+          .about_banner_area .banner_inner .banner_content .page_link a:last-child {
+            margin-right: 0px; }
+            .about_banner_area .banner_inner .banner_content .page_link a:last-child:before {
+              display: none; }
+
+
+.blog_banner_area {
+  position: relative;
+  background: url(../img/banner/blog_banner.jpg) no-repeat center center;
+  z-index: 1;
+  min-height: 392px;
+  padding-top: 0 !important; }
+  .blog_banner_area .banner_inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 392px;
+    z-index: 1; }
+    .blog_banner_area .banner_inner .overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 35, 71, 0.8); }
+    .blog_banner_area .banner_inner .banner_content {
+      position: relative;
+      z-index: 2;
+      color: #fff; }
+      .blog_banner_area .banner_inner .banner_content h2 {
+        color: #fff;
+        font-size: 45px;
+        margin-bottom: 0px; }
+      .blog_banner_area .banner_inner .banner_content .page_link {
+        display: inline-block;
+        padding: 7px 20px; }
+        .blog_banner_area .banner_inner .banner_content .page_link a {
+          font-size: 15px;
+          color: #fff;
+          font-family: "Roboto", sans-serif;
+          margin-right: 20px;
+          position: relative;
+          text-transform: capitalize; }
+          .blog_banner_area .banner_inner .banner_content .page_link a:before {
+            content: "/";
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%); }
+          .blog_banner_area .banner_inner .banner_content .page_link a:last-child {
+            margin-right: 0px; }
+            .blog_banner_area .banner_inner .banner_content .page_link a:last-child:before {
+              display: none; }
+
 
 .banner_area {
   position: relative;
