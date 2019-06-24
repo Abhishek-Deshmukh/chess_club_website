@@ -30,12 +30,16 @@
 				<h3 class="mb-30 title_color">{{ post.title }}</h3>
 				<div class="row">
 					<div class="col-md-3">
-						<img src="{{post.image.urls}}" alt="{% static './img/next.png' %}" class="img-fluid">
+						<img src="{% if post.image %}
+						{{post.image.url}}
+						{% else %}
+						{% static './img/post_default.jpg' %}
+						{% endif %}" class="img-fluid">
 					</div>
 					<div class="col-md-9 mt-sm-20 left-align-p">
 						<p>{{ post.content }}
 						<br>
-						-{{post.date}}</p>
+						-{{post.date_time}}</p>
 					</div>
 				</div>
 			</div>
