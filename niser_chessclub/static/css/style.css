@@ -316,7 +316,7 @@ button:focus {
     padding: 0;
     border: 0; }
   #search_input_box #close_search {
-    color: #fff;
+    color: #ffffff;
     font-weight: 600;
     cursor: pointer;
     padding: 10px 0; }
@@ -343,7 +343,7 @@ button:focus {
     width: 100%; }
     @media (max-width: 991px) {
       .home_banner_area .banner_inner {
-        top: 50%; } }
+        top: 50%; }
       font-size: 48px;
       font-weight: 500;
       color: #ffffa2; }
